@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Megatire - El lugar de tu vehículo</title>
+    <link href="/public/output.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="icon" type="image/png" sizes="57x57" href="/public/icon.png">
+</head>
+
+<body class=" bg-primary">
+    <header
+        class="select-none bg-white fixed top-0 left-0 w-screen z-[99] flex items-center justify-between py-4 px-5 h-20">
+        <img class="w-40 h-auto cursor-pointer" src="/public/logo.png" alt="Logo">
+        <div class="laptop:hidden phone:flex cursor-pointer duration-200 p-2 rounded-full bg-black bg-opacity-0 hover:bg-opacity-20"
+            id="button-open-navbar">
+            <span class="material-symbols-outlined">
+                menu
+            </span>
+        </div>
+        <nav class="phone:hidden laptop:flex px-3 flex text-xl items-center h-full">
+            <a class="cursor-pointer hover:text-primary hover:font-bold duration-200 px-2 text-center" href="/">
+                Inicio
+            </a>
+            <a class="cursor-pointer hover:text-primary hover:font-bold duration-200 px-2 text-center" href="/sedes">
+                Sedes
+            </a>
+            <a class="cursor-pointer hover:text-primary hover:font-bold duration-200 px-2 text-center" href="/contacto">
+                Contacto
+            </a>
+            <a class="cursor-pointer hover:text-primary hover:font-bold duration-200 px-2 text-center"
+                href="/servicios">
+                Servicios
+            </a>
+        </nav>
+    </header>
+    <nav class="select-none translate-x-full fixed flex-col justify-center top-0 left-0 bg-third px-3 z-[9999] flex text-xl items-center h-screen w-screen transition-transform duration-500 ease-in-out"
+        id="mobile-navbar">
+        <a class="text-white cursor-pointer hover:font-bold duration-200 py-5 text-center" href="/">
+            Inicio
+        </a>
+        <a class="text-white cursor-pointer hover:font-bold duration-200 py-5 text-center" href="/sedes">
+            Sedes
+        </a>
+        <a class="text-white cursor-pointer hover:font-bold duration-200 py-5 text-center" href="/servicios">
+            Servicios
+        </a>
+        <a class="text-white cursor-pointer hover:font-bold duration-200 py-5 text-center" href="/contacto">
+            Contacto
+        </a>
+        <div class="fixed text-white top-5 right-3 cursor-pointer p-1 flex items-center justify-center rounded-full border border-white hover:bg-white hover:text-third duration-200"
+            id="button-close-navbar">
+            <span class="material-symbols-outlined">
+                close
+            </span>
+        </div>
+    </nav>
+    <div class="h-20"></div>
+
+    <section class="w-full bg-white flex justify-center items-start pt-5 pb-0 laptop:px-14 phone:px-5 text-white">
+        <div class="w-full rounded-lg border bg-third py-5 px-5 flex items-center justify-center flex-wrap">
+            <div
+                class="tablet:w-1/2 phone:w-full duration-200 phone:pb-5 tablet:pb-0 flex flex-col items-center tablet:border-r">
+                <span class="text-2xl font-bold pb-2">
+                    ¿Eres cliente?
+                </span>
+                <a href="/clientes"
+                    class="p-2 border bg-white bg-opacity-0 hover:bg-opacity-100 hover:text-third duration-200 rounded-lg w-fit">
+                    ¡Ir a la plataforma!
+                </a>
+            </div>
+            <div class="tablet:w-1/2 phone:w-full duration-200  flex flex-col items-center">
+                <span class="text-2xl font-bold pb-2 text-center">
+                    Plataforma administrativa
+                </span>
+                <a href="/dashboard"
+                    class="p-2 border bg-white bg-opacity-0 hover:bg-opacity-100 hover:text-third duration-200 rounded-lg w-fit">
+                    Iniciar sesión
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="w-full bg-white flex justify-centar items-start pt-5 pb-0 px-5">
+        <h1 class="text-3xl text-primary font-bold">
+            Productos y servicios de MEGATIRE
+        </h1>
+    </section>
+
+
+    <section class="w-full bg-white flex justify-center items-start pt-5 pb-0 px-5 text-white">
+        <div class="w-full min-h-20 flex flex-wrap py-3 justify-center">
+            <div class="tablet:w-1/2 w-full tablet:h-[45vh] phone:h-80 border relative bg-black cursor-pointer"
+                id="aceites">
+                <div
+                    class="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 hover:opacity-0 duration-500 flex flex-wrap justify-center items-center p-5 overflow-hidden">
+                    <h2 class="font-bold text-3xl text-white h-fit w-full text-center">
+                        Lubricantes
+                    </h2>
+                    <span class="w-full text-white text-justify">
+                        Cambiar el aceite: prolonga vida, ahorra dinero, mejora rendimiento. ¡Mantén tu vehículo en
+                        excelente forma! Con nuestros lubricantes <strong>TOP 1</strong> y <strong>GULF</strong>.
+                    </span>
+                </div>
+            </div>
+            <div class="tablet:w-1/2 w-full tablet:h-[45vh] phone:h-80 border relative bg-black cursor-pointer"
+                id="llantas">
+                <div
+                    class="absolute top-0 left-0 w-full h-full bg-black bg-opacity-40 flex flex-wrap justify-center items-center p-5 overflow-hidden">
+                    <h2 class="font-bold text-3xl text-white h-fit w-full text-center">
+                        Llantas
+                    </h2>
+                    <span class="w-full text-white text-justify">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, dolor provident ipsam modi
+                        fugit quidem nobis exercitationem. Iste fuga dolore placeat! Pariatur animi voluptatem nisi
+                        magni assumenda voluptas blanditiis id?
+                    </span>
+                </div>
+            </div>
+            <div class="tablet:w-1/2 w-full tablet:h-[45vh] phone:h-80 border relative bg-black cursor-pointer"
+                id="llantas">
+                <div
+                    class="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 flex flex-wrap justify-center items-center p-5 overflow-hidden">
+                    <h2 class="font-bold text-3xl text-white h-fit w-full text-center">
+                        Filtros premium
+                    </h2>
+                    <span class="w-full text-white text-justify">
+                        Aquí tenemos toda la filtración necesaria para nuestro vehículo. Los filtros son los encargados
+                        de retener todo tipo de impureza que pueda afectar el correcto funcionamiento del motor.
+                        <strong></strong>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="w-full min-h-[10vh] bg-white flex flex-wrap px-5">
+        <div class="w-full h-fit border-b-2 border-third text-xl pt-5">
+            <h1 class="font-bold">Lubricantes</h1>
+        </div>
+        <div class="relative w-full min-h-[100px] pt-3">
+            <div class="h-full absolute select-none -left-2 flex items-center">
+                <span
+                    class="prev z-50 material-symbols-outlined rounded-full duration-200 bg-white text-primary hover:text-white hover:bg-primary p-1 cursor-pointer"
+                    onclick="lubricantes.prev()">
+                    arrow_back
+                </span>
+            </div>
+            <div class="h-full absolute select-none -right-2 flex items-center">
+                <span
+                    class="next z-50 material-symbols-outlined rounded-full duration-200 bg-white text-primary hover:text-white hover:bg-primary p-1 cursor-pointer"
+                    onclick="lubricantes.next()">
+                    arrow_forward
+                </span>
+            </div>
+            <div class="w-full overflow-hidden h-full leading-4">
+                <div class="w-full flex scroll-wrapper duration-200 ease-out">
+                    <div class="scroll-item phone:w-full tablet:w-1/4 laptop:w-1/5 flex flex-shrink-0 px-2 py-1">
+                        <div class="flex flex-wrap w-full items-center border rounded-xl border-opacity-10 justify-center relative overflow-hidden h-32">
+                            <h3 class="w-full text-center pt-2 text-sm italic">
+                                Evolution PCMO
+                            </h3>
+                            <span
+                                class="absolute rotate-45 bg-red-500 top-3 text-white font-bold italic -right-5 text-xs px-6">
+                                TOP 1
+                            </span>
+                        </div>
+                    </div>
+                    <div class="scroll-item phone:w-full tablet:w-1/4 laptop:w-1/5 flex flex-shrink-0 px-2 py-1">
+                        <div class="flex flex-wrap w-full items-center border rounded-xl border-opacity-10 justify-center relative overflow-hidden h-32">
+                            <h3 class="w-full text-center pt-2 text-sm italic">
+                                HP Plus
+                            </h3>
+                            <span
+                                class="absolute rotate-45 bg-red-500 top-3 text-white font-bold italic -right-5 text-xs px-6">
+                                TOP 1
+                            </span>
+                        </div>
+                    </div>
+                    <div class="scroll-item phone:w-full tablet:w-1/4 laptop:w-1/5 flex flex-shrink-0 px-2 py-1">
+                        <div class="flex flex-wrap w-full items-center border rounded-xl border-opacity-10 justify-center relative overflow-hidden h-32">
+                            <h3 class="w-full text-center pt-2 text-sm italic">
+                                SMO MC
+                            </h3>
+                            <span
+                                class="absolute rotate-45 bg-red-500 top-3 text-white font-bold italic -right-5 text-xs px-6">
+                                TOP 1
+                            </span>
+                        </div>
+                    </div>
+                    <div class="scroll-item phone:w-full tablet:w-1/4 laptop:w-1/5 flex flex-shrink-0 px-2 py-1">
+                        <div class="flex flex-wrap w-full items-center border rounded-xl border-opacity-10 justify-center relative overflow-hidden h-32">
+                            <h3 class="w-full text-center pt-2 text-sm italic">
+                                Action Matic
+                            </h3>
+                            <span
+                                class="absolute rotate-45 bg-red-500 top-3 text-white font-bold italic -right-5 text-xs px-6">
+                                TOP 1
+                            </span>
+                        </div>
+                    </div>
+                    <div class="scroll-item phone:w-full tablet:w-1/4 laptop:w-1/5 flex flex-shrink-0 px-2 py-1">
+                        <div class="flex flex-wrap w-full items-center border rounded-xl border-opacity-10 justify-center relative overflow-hidden h-32">
+                            <h3 class="w-full text-center pt-2 text-sm italic">
+                                HD
+                            </h3>
+                            <span
+                                class="absolute rotate-45 bg-red-500 top-3 text-white font-bold italic -right-5 text-xs px-6">
+                                TOP 1
+                            </span>
+                        </div>
+                    </div>
+                    <div class="scroll-item phone:w-full tablet:w-1/4 laptop:w-1/5 flex flex-shrink-0 px-2 py-1">
+                        <div class="flex flex-wrap w-full items-center border rounded-xl border-opacity-10 justify-center relative overflow-hidden h-32">
+                            <h3 class="w-full text-center pt-2 text-sm italic">
+                                XLR
+                            </h3>
+                            <span
+                                class="absolute rotate-45 bg-red-500 top-3 text-white font-bold italic -right-5 text-xs px-6">
+                                TOP 1
+                            </span>
+                        </div>
+                    </div>
+                    <div class="scroll-item phone:w-full tablet:w-1/4 laptop:w-1/5 flex flex-shrink-0 px-2 py-1">
+                        <div class="flex flex-wrap w-full items-center border rounded-xl border-opacity-10 justify-center relative overflow-hidden h-32">
+                            <h3 class="w-full text-center pt-2 text-sm italic">
+                                Formula ULE 5W-30
+                            </h3>
+                            <span
+                                class="absolute rotate-45 bg-red-500 top-3 text-white font-bold italic -right-5 text-xs px-6">
+                                GULF
+                            </span>
+                        </div>
+                    </div>
+                    <div class="scroll-item phone:w-full tablet:w-1/4 laptop:w-1/5 flex flex-shrink-0 px-2 py-1">
+                        <div class="flex flex-wrap w-full items-center border rounded-xl border-opacity-10 justify-center relative overflow-hidden h-32">
+                            <h3 class="w-full text-center pt-2 text-sm italic">
+                                GULF MAX
+                            </h3>
+                            <span
+                                class="absolute rotate-45 bg-red-500 top-3 text-white font-bold italic -right-5 text-xs px-6">
+                                GULF
+                            </span>
+                        </div>
+                    </div>
+                    <div class="scroll-item phone:w-full tablet:w-1/4 laptop:w-1/5 flex flex-shrink-0 px-2 py-1">
+                        <div class="flex flex-wrap w-full items-center border rounded-xl border-opacity-10 justify-center relative overflow-hidden h-32">
+                            <h3 class="w-full text-center pt-2 text-sm italic">
+                                GULF superFleet Supreme
+                            </h3>
+                            <span
+                                class="absolute rotate-45 bg-red-500 top-3 text-white font-bold italic -right-5 text-xs px-6">
+                                GULF
+                            </span>
+                        </div>
+                    </div>
+                    <div class="scroll-item phone:w-full tablet:w-1/4 laptop:w-1/5 flex flex-shrink-0 px-2 py-1">
+                        <div class="flex flex-wrap w-full items-center border rounded-xl border-opacity-10 justify-center relative overflow-hidden h-32">
+                            <h3 class="w-full text-center pt-2 text-sm italic">
+                                GULF + NANO 15W-40
+                            </h3>
+                            <span
+                                class="absolute rotate-45 bg-red-500 top-3 text-white font-bold italic -right-5 text-xs px-6">
+                                GULF
+                            </span>
+                        </div>
+                    </div>
+                    <div class="scroll-item phone:w-full tablet:w-1/4 laptop:w-1/5 flex flex-shrink-0 px-2 py-1">
+                        <div class="flex flex-wrap w-full items-center border rounded-xl border-opacity-10 justify-center relative overflow-hidden h-32">
+                            <h3 class="w-full text-center pt-2 text-sm italic">
+                                Pride 4T 20W-50
+                            </h3>
+                            <span
+                                class="absolute rotate-45 bg-red-500 top-3 text-white font-bold italic -right-5 text-xs px-6">
+                                GULF
+                            </span>
+                        </div>
+                    </div>
+                    <div class="scroll-item phone:w-full tablet:w-1/4 laptop:w-1/5 flex flex-shrink-0 px-2 py-1">
+                        <div class="flex flex-wrap w-full items-center border rounded-xl border-opacity-10 justify-center relative overflow-hidden h-32">
+                            <h3 class="w-full text-center pt-2 text-sm italic">
+                                GULF pride 2T plus
+                            </h3>
+                            <span
+                                class="absolute rotate-45 bg-red-500 top-3 text-white font-bold italic -right-5 text-xs px-6">
+                                GULF
+                            </span>
+                        </div>
+                    </div>
+                    <div class="scroll-item phone:w-full tablet:w-1/4 laptop:w-1/5 flex flex-shrink-0 px-2 py-1">
+                        <div class="flex flex-wrap w-full items-center border rounded-xl border-opacity-10 justify-center relative overflow-hidden h-32">
+                            <h3 class="w-full text-center pt-2 text-sm italic">
+                                GULF Coolant
+                            </h3>
+                            <span
+                                class="absolute rotate-45 bg-red-500 top-3 text-white font-bold italic -right-5 text-xs px-6">
+                                GULF
+                            </span>
+                        </div>
+                    </div>
+                    <div class="scroll-item phone:w-full tablet:w-1/4 laptop:w-1/5 flex flex-shrink-0 px-2 py-1">
+                        <div class="flex flex-wrap w-full items-center border rounded-xl border-opacity-10 justify-center relative overflow-hidden h-32">
+                            <h3 class="w-full text-center pt-2 text-sm italic">
+                                GULF Antifreeze extended life
+                            </h3>
+                            <span
+                                class="absolute rotate-45 bg-red-500 top-3 text-white font-bold italic -right-5 text-xs px-6">
+                                GULF
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-full h-fit border-b-2 border-third text-xl pt-5">
+            <h1 class="font-bold">Accesorios y otros productos</h1>
+        </div>
+        <div class="relative w-full min-h-[100px] pt-3">
+            <div class="h-full absolute select-none -left-2 flex items-center">
+                <span
+                    class="prev z-50 material-symbols-outlined rounded-full duration-200 bg-white text-primary hover:text-white hover:bg-primary p-1 cursor-pointer"
+                    onclick="accesorios.prev()">
+                    arrow_back
+                </span>
+            </div>
+            <div class="h-full absolute select-none -right-2 flex items-center">
+                <span
+                    class="next z-50 material-symbols-outlined rounded-full duration-200 bg-white text-primary hover:text-white hover:bg-primary p-1 cursor-pointer"
+                    onclick="accesorios.next()">
+                    arrow_forward
+                </span>
+            </div>
+            <div class="w-full overflow-hidden h-full leading-4">
+                <div class="w-full flex scroll-wrapper-accesorios duration-200 ease-out">
+                    <div class="scroll-item phone:w-full tablet:w-1/4 laptop:w-1/5 flex flex-shrink-0 px-2 py-1">
+                        <div class="flex flex-wrap w-full items-start justify-center relative overflow-hidden border border-primary rounded-xl px-4">
+                            <h3 class="w-full text-center pt-2 phone:text-3xl tablet:text-base font-bold italic">
+                                Filtros Premium
+                            </h3>
+                            <p class="text-justify">
+                                Los filtros son los encargados de retener todo tipo de impureza que pueda afectar el correcto funcionamiento del automotor.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="scroll-item phone:w-full tablet:w-1/4 laptop:w-1/5 flex flex-shrink-0 px-2 py-1">
+                        <div class="flex flex-wrap w-full items-start justify-center relative overflow-hidden border border-primary rounded-xl px-4">
+                            <h3 class="w-full text-center pt-2  phone:text-3xl tablet:text-base font-bold italic">
+                                Líquido de frenos
+                            </h3> 
+                            <p class="text-justify">
+                                Permite transmitir la fuerza del pedal a los cilindros del sistema hidráulico.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="scroll-item phone:w-full tablet:w-1/4 laptop:w-1/5 flex flex-shrink-0 px-2 py-1">
+                        <div class="flex flex-wrap w-full items-start justify-center relative overflow-hidden border border-primary rounded-xl px-4">
+                            <h3 class="w-full text-center pt-2  phone:text-3xl tablet:text-base font-bold italic">
+                                Refrigerante 
+                            </h3>
+                            <p class="text-justify">
+                                Protege los sistemas de enfriamiento de los motores, ayuda a umentar la vida últil del motor y las partes internas de la refrigeración.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="scroll-item phone:w-full tablet:w-1/4 laptop:w-1/5 flex flex-shrink-0 px-2 py-1">
+                        <div class="flex flex-wrap w-full items-start justify-center relative overflow-hidden border border-primary rounded-xl px-4">
+                            <h3 class="w-full text-center pt-2  phone:text-3xl tablet:text-base font-bold italic">
+                                Recarga de extintor 
+                            </h3>
+                            <p class="text-justify">
+                                Tanto por normativa como por seguridad, es importante recargar el extintor una vez al año.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="scroll-item phone:w-full tablet:w-1/4 laptop:w-1/5 flex flex-shrink-0 px-2 py-1">
+                        <div class="flex flex-wrap w-full items-start justify-center relative overflow-hidden border border-primary rounded-xl px-4">
+                            <h3 class="w-full text-center pt-2  phone:text-3xl tablet:text-base font-bold italic">
+                                Bombillería Narva 
+                            </h3>
+                            <p class="text-justify">
+                                Especialistas en iluminación automotriz.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="scroll-item phone:w-full tablet:w-1/4 laptop:w-1/5 flex flex-shrink-0 px-2 py-1">
+                        <div class="flex flex-wrap w-full items-start justify-center relative overflow-hidden border border-primary rounded-xl px-4">
+                            <h3 class="w-full text-center pt-2  phone:text-3xl tablet:text-base font-bold italic">
+                                Plumillas o limpia parabrisas 
+                            </h3>
+                            <p class="text-justify">
+                                Son elementos de seguridad, si están desgastados, la conducción bajo la lluvia se vuelve peligrosa.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="scroll-item phone:w-full tablet:w-1/4 laptop:w-1/5 flex flex-shrink-0 px-2 py-1">
+                        <div class="flex flex-wrap w-full items-start justify-center relative overflow-hidden border border-primary rounded-xl px-4">
+                            <h3 class="w-full text-center pt-2  phone:text-3xl tablet:text-base font-bold italic">
+                                Baterías 
+                            </h3>
+                            <p class="text-justify">
+                                Su función principal es la puesta en marcha del motor de arranque.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="scroll-item phone:w-full tablet:w-1/4 laptop:w-1/5 flex flex-shrink-0 px-2 py-1">
+                        <div class="flex flex-wrap w-full items-start justify-center relative overflow-hidden border border-primary rounded-xl px-4">
+                            <h3 class="w-full text-center pt-2  phone:text-3xl tablet:text-base font-bold italic">
+                                Rines de lujo 
+                            </h3>
+                            <p class="text-justify">
+                                Ayudan a dar un toque único y atractivo a las llantas, contribuyen a una mejor resistencia aerodinámica.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="scroll-item phone:w-full tablet:w-1/4 laptop:w-1/5 flex flex-shrink-0 px-2 py-1">
+                        <div class="flex flex-wrap w-full items-start justify-center relative overflow-hidden border border-primary rounded-xl px-4">
+                            <h3 class="w-full text-center pt-2  phone:text-3xl tablet:text-base font-bold italic">
+                                Pastillas
+                            </h3>
+                            <p class="text-justify">
+                                Son las encargadas de crear la fricción necesaria para reducir la velocidad del vehículo.
+                            </p>
+                            <span
+                                class="absolute rotate-45 bg-red-500 top-3 text-white font-bold italic -right-5 text-xs px-6">
+                                Moto
+                            </span>
+                        </div>
+                    </div>
+                    <div class="scroll-item phone:w-full tablet:w-1/4 laptop:w-1/5 flex flex-shrink-0 px-2 py-1">
+                        <div class="flex flex-wrap w-full items-start justify-center relative overflow-hidden border border-primary rounded-xl px-4">
+                            <h3 class="w-full text-center pt-2  phone:text-3xl tablet:text-base font-bold italic">
+                                Bandas de freno
+                            </h3>
+                            <p class="text-justify">
+                                Es la pieza que se mueve una vez se accionan los frenos, y que hace contacto con la campana y se frena el vehículo.
+                            </p>
+                            <span
+                                class="absolute rotate-45 bg-red-500 top-3 text-white font-bold italic -right-5 text-xs px-6">
+                                Moto
+                            </span>
+                        </div>
+                    </div>
+                    <div class="scroll-item phone:w-full tablet:w-1/4 laptop:w-1/5 flex flex-shrink-0 px-2 py-1">
+                        <div class="flex flex-wrap w-full items-start justify-center relative overflow-hidden border border-primary rounded-xl px-4">
+                            <h3 class="w-full text-center pt-2  phone:text-3xl tablet:text-base font-bold italic">
+                                Válvulas
+                            </h3>
+                            <p class="text-justify">
+                                Son las encargadas de mantener la presión de aire en el interior del vástago, sin ella habrá pérdida de presión.
+                            </p>
+                            <span
+                                class="absolute rotate-45 bg-red-500 top-3 text-white font-bold italic -right-5 text-xs px-6">
+                                Moto
+                            </span>
+                        </div>
+                    </div>
+                    <div class="scroll-item phone:w-full tablet:w-1/4 laptop:w-1/5 flex flex-shrink-0 px-2 py-1">
+                        <div class="flex flex-wrap w-full items-start justify-center relative overflow-hidden border border-primary rounded-xl px-4">
+                            <h3 class="w-full text-center pt-2  phone:text-3xl tablet:text-base font-bold italic">
+                                Bujías
+                            </h3>
+                            <p class="text-justify">
+                                Proporciona la chispa que quema la gasolina, y funciona como disipador de calor.
+                            </p>
+                            <span
+                                class="absolute rotate-45 bg-red-500 top-3 text-white font-bold italic -right-5 text-xs px-6">
+                                Moto
+                            </span>
+                        </div>
+                    </div>
+                    <div class="scroll-item phone:w-full h-40 tablet:w-1/4 laptop:w-1/5 flex flex-shrink-0 px-2 py-1">
+                        <div class="flex flex-wrap w-full items-start justify-center relative overflow-hidden border border-primary rounded-xl px-4">
+                            <h3 class="w-full text-center pt-2  phone:text-3xl tablet:text-base font-bold italic">
+                                Fusibles
+                            </h3>
+                            <p class="text-justify">
+                                Es un elemento que brinda seguridad al circuito eléctrico cuando la intensidad de la corriente es mayor a lo estimado.
+                            </p>
+                            <span
+                                class="absolute rotate-45 bg-red-500 top-3 text-white font-bold italic -right-5 text-xs px-6">
+                                Moto
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-full h-fit border-b-2 border-third text-xl pt-5">
+            <h1 class="font-bold">Servicios</h1>
+        </div>
+        <div class="relative w-full min-h-[100px] pt-3">
+            <div class="h-full absolute select-none -left-2 flex items-center">
+                <span
+                    class="prev z-50 material-symbols-outlined rounded-full duration-200 bg-white text-primary hover:text-white hover:bg-primary p-1 cursor-pointer"
+                    onclick="servicios.prev()">
+                    arrow_back
+                </span>
+            </div>
+            <div class="h-full absolute select-none -right-2 flex items-center">
+                <span
+                    class="next z-50 material-symbols-outlined rounded-full duration-200 bg-white text-primary hover:text-white hover:bg-primary p-1 cursor-pointer"
+                    onclick="servicios.next()">
+                    arrow_forward
+                </span>
+            </div>
+            <div class="w-full overflow-hidden h-full leading-4">
+                <div class="w-full flex scroll-wrapper-servicios duration-200 ease-out">
+                    <div class="scroll-item phone:w-full tablet:w-1/6 laptop:w-1/5 flex flex-shrink-0 px-2 py-1">
+                        <div class="flex flex-wrap w-full items-center justify-center relative overflow-hidden border h-32 rounded-xl">
+                            <h3 class="w-full text-center pt-2 text-xl">
+                                Ionización
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="scroll-item phone:w-full tablet:w-1/6 laptop:w-1/5 flex flex-shrink-0 px-2 py-1">
+                        <div class="flex flex-wrap w-full items-center justify-center relative overflow-hidden border h-32 rounded-xl">
+                            <h3 class="w-full text-center pt-2 text-xl">
+                                Alineación
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="scroll-item phone:w-full tablet:w-1/6 laptop:w-1/5 flex flex-shrink-0 px-2 py-1">
+                        <div class="flex flex-wrap w-full items-center justify-center relative overflow-hidden border h-32 rounded-xl">
+                            <h3 class="w-full text-center pt-2 text-xl">
+                                Balanceo
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="scroll-item phone:w-full tablet:w-1/6 laptop:w-1/5 flex flex-shrink-0 px-2 py-1">
+                        <div class="flex flex-wrap w-full items-center justify-center relative overflow-hidden border h-32 rounded-xl">
+                            <h3 class="w-full text-center pt-2 text-xl">
+                                Montaje
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="scroll-item phone:w-full tablet:w-1/6 laptop:w-1/5 flex flex-shrink-0 px-2 py-1">
+                        <div class="flex flex-wrap w-full items-center justify-center relative overflow-hidden border h-32 rounded-xl">
+                            <h3 class="w-full text-center pt-2 text-xl">
+                                Rotación
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="scroll-item phone:w-full tablet:w-1/6 laptop:w-1/5 flex flex-shrink-0 px-2 py-1">
+                        <div class="flex flex-wrap w-full items-center justify-center relative overflow-hidden border h-32 rounded-xl">
+                            <h3 class="w-full text-center pt-2 text-xl">
+                                Despinche
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="scroll-item phone:w-full tablet:w-1/6 laptop:w-1/5 flex flex-shrink-0 px-2 py-1">
+                        <div class="flex flex-wrap w-full items-center justify-center relative overflow-hidden border h-32 rounded-xl">
+                            <h3 class="w-full text-center pt-2 text-xl">
+                                Aire con Nitrógeno
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="scroll-item phone:w-full tablet:w-1/6 laptop:w-1/5 flex flex-shrink-0 px-2 py-1">
+                        <div class="flex flex-wrap w-full items-center justify-center relative overflow-hidden border h-32 rounded-xl">
+                            <h3 class="w-full text-center pt-2 text-xl">
+                                Lubricación
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="scroll-item phone:w-full tablet:w-1/6 laptop:w-1/5 flex flex-shrink-0 px-2 py-1">
+                        <div class="flex flex-wrap w-full items-center justify-center relative overflow-hidden border h-32 rounded-xl">
+                            <h3 class="w-full text-center pt-2 text-xl">
+                                Engrase
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="scroll-item phone:w-full tablet:w-1/6 laptop:w-1/5 flex flex-shrink-0 px-2 py-1">
+                        <div class="flex flex-wrap w-full items-center justify-center relative overflow-hidden border h-32 rounded-xl">
+                            <h3 class="w-full text-center pt-2 text-xl">
+                                Cambio de líquido de frenos
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="scroll-item phone:w-full tablet:w-1/6 laptop:w-1/5 flex flex-shrink-0 px-2 py-1">
+                        <div class="flex flex-wrap w-full items-center justify-center relative overflow-hidden border h-32 rounded-xl">
+                            <h3 class="w-full text-center pt-2 text-xl">
+                                Cambio de valvulina
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="scroll-item phone:w-full tablet:w-1/6 laptop:w-1/5 flex flex-shrink-0 px-2 py-1">
+                        <div class="flex flex-wrap w-full items-center justify-center relative overflow-hidden border h-32 rounded-xl">
+                            <h3 class="w-full text-center pt-2 text-xl">
+                                Cambio de filtros de aire
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="scroll-item phone:w-full tablet:w-1/6 laptop:w-1/5 flex flex-shrink-0 px-2 py-1">
+                        <div class="flex flex-wrap w-full items-center justify-center relative overflow-hidden border h-32 rounded-xl">
+                            <h3 class="w-full text-center pt-2 text-xl">
+                                Cambio de filtros de aceite
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="scroll-item phone:w-full tablet:w-1/6 laptop:w-1/5 flex flex-shrink-0 px-2 py-1">
+                        <div class="flex flex-wrap w-full items-center justify-center relative overflow-hidden border h-32 rounded-xl">
+                            <h3 class="w-full text-center pt-2 text-xl">
+                                Cambio de filtro de combustible
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="scroll-item phone:w-full tablet:w-1/6 laptop:w-1/5 flex flex-shrink-0 px-2 py-1">
+                        <div class="flex flex-wrap w-full items-center justify-center relative overflow-hidden border h-32 rounded-xl">
+                            <h3 class="w-full text-center pt-2 text-xl">
+                                Cambio de filtros de cabina
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="scroll-item phone:w-full tablet:w-1/6 laptop:w-1/5 flex flex-shrink-0 px-2 py-1">
+                        <div class="flex flex-wrap w-full items-center justify-center relative overflow-hidden border h-32 rounded-xl">
+                            <h3 class="w-full text-center pt-2 text-xl">
+                                Cambio de filtros de batería
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="scroll-item phone:w-full tablet:w-1/6 laptop:w-1/5 flex flex-shrink-0 px-2 py-1">
+                        <div class="flex flex-wrap w-full items-center justify-center relative overflow-hidden border h-32 rounded-xl">
+                            <h3 class="w-full text-center pt-2 text-xl">
+                                Alineación de luces
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="scroll-item phone:w-full tablet:w-1/6 laptop:w-1/5 flex flex-shrink-0 px-2 py-1">
+                        <div class="flex flex-wrap w-full items-center justify-center relative overflow-hidden border h-32 rounded-xl">
+                            <h3 class="w-full text-center pt-2 text-xl">
+                                Hidratación de partes negras
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="scroll-item phone:w-full tablet:w-1/6 laptop:w-1/5 flex flex-shrink-0 px-2 py-1">
+                        <div class="flex flex-wrap w-full items-center justify-center relative overflow-hidden border h-32 rounded-xl">
+                            <h3 class="w-full text-center pt-2 text-xl">
+                                Revisión de puntos de seguridad
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section class="w-full min-h-[10vh] bg-white flex flex-wrap px-5" id="services">
+        <div class="w-full h-fit border-b-2 border-third text-2xl">
+            <h2>Serviteca de Megatire:</h2>
+        </div>
+        <div class="w-full min-h-20 flex flex-wrap py-3">
+            <a class="tablet:w-1/2 phone:w-full h-60 border relative bg-black cursor-pointer"
+                href="/contacto?alineacion" id="alineacion">
+                <div
+                    class="absolute top-0 left-0 w-full h-full bg-black bg-opacity-60 flex justify-center items-end py-5">
+                    <span class="font-bold text-3xl text-white h-fit">
+                        Alineación
+                    </span>
+                </div>
+            </a>
+            <a class="tablet:w-1/2 phone:w-full h-60 border relative bg-black cursor-pointer" href="/contacto?balanceo"
+                id="balanceo">
+                <div
+                    class="absolute top-0 left-0 w-full h-full bg-black bg-opacity-60 flex justify-center items-end py-5">
+                    <span class="font-bold text-3xl text-white h-fit">
+                        Balanceo
+                    </span>
+                </div>
+            </a>
+        </div>
+    </section> -->
+
+    <section
+        class="w-full min-h-[45vh] bg-white flex justify-around items-center pt-10 pb-5 laptop:px-14 phone:px-5 text-white">
+        <div class="w-full rounded-lg border bg-third py-5 px-5 flex items-center justify-center flex-col">
+            <span class="text-2xl font-bold pb-2">
+                ¡Atención!
+            </span>
+            <h3 class="pb-2">
+                Si no recibiste tu revisión de 25 puntos en cualquiera de nuestras sedes no dudes en contactarnos
+            </h3>
+            <a href="/contacto?puntos"
+                class="p-2 border bg-white bg-opacity-0 hover:bg-opacity-100 hover:text-third duration-200 rounded-lg">
+                ¡Contáctanos!
+            </a>
+        </div>
+    </section>
+
+    <section
+        class="w-full min-h-[40vh] bg-primary flex justify-around items-center pt-10 pb-5 laptop:px-14 phone:px-5 text-white flex-col">
+        <div class="w-full flex flex-wrap justify-center items-start h-1/3 pb-5">
+            <div class="tablet:w-1/3 phone:text-center phone:w-full text-left h-full flex flex-col px-2">
+                <span class="font-bold text-3xl pb-3">
+                    Servicios:
+                </span>
+                <a href="/servicios#alineacion" class="hover:font-bold duration-200">
+                    Alineación
+                </a>
+                <a href="/servicios#balanceo" class="hover:font-bold duration-200">
+                    Balanceo
+                </a>
+                <a href="/servicios#aceite" class="hover:font-bold duration-200">
+                    Aceite
+                </a>
+                <a href="/servicios#llantas" class="hover:font-bold duration-200">
+                    Llantas
+                </a>
+                <a href="/servicios#accesorios" class="hover:font-bold duration-200">
+                    Accesorios
+                </a>
+            </div>
+            <div class="tablet:w-1/3 phone:text-center phone:w-full h-full flex flex-col px-2 text-left">
+                <span class="font-bold text-3xl pb-3">
+                    Contacto:
+                </span>
+                <span class="">
+                    Barranca:
+                </span>
+                <a href="tel:3173666747" class="hover:font-bold duration-200">
+                    (+57) 317 366 6747 - Ivonne Galvis
+                </a>
+                <span class="">
+                    Carrera 18:
+                </span>
+                <a href="tel:3184278546" class="hover:font-bold duration-200">
+                    (+57) 318 427 8546 - Pedro Duarte
+                </a>
+                <span class="">
+                    La Aurora:
+                </span>
+                <a href="tel:3142068279" class="hover:font-bold duration-200">
+                    (+57) 314 206 8279 - Nicol Garcia
+                </a>
+                <span class="">
+                    Chimitá:
+                </span>
+                <a href="tel:3187353962" class="pb-2 hover:font-bold duration-200">
+                    (+57) 318 735 3962 - Jhonatan
+                </a>
+            </div>
+            <div class="tablet:w-1/3 phone:text-center phone:w-full text-left h-full flex flex-col px-2">
+                <span class="font-bold text-3xl pb-3">
+                    Sedes:
+                </span>
+                <a href="/sedes#la_18" class="hover:font-bold duration-200">
+                    Sede la 18
+                </a>
+                <a href="/sedes#aurora" class="hover:font-bold duration-200">
+                    Sede la Aurora
+                </a>
+                <a href="/sedes#barranca" class="hover:font-bold duration-200">
+                    Sede Barranca
+                </a>
+                <a href="/sedes#chimita" class="hover:font-bold duration-200">
+                    Sede Chimitá
+                </a>
+            </div>
+        </div>
+        <div class="border-t border-gray-300 w-full text-center border-opacity-40 pt-3 italic">
+            Megatire 2023
+        </div>
+    </section>
+
+    <script src="/public/main.js"></script>
+    <script>
+        const lubricantes = new HorizontalSlider('.scroll-wrapper')
+        const accesorios = new HorizontalSlider('.scroll-wrapper-accesorios')
+        const servicios = new HorizontalSlider('.scroll-wrapper-servicios')
+    </script>
+</body>
+
+<style>
+    #balanceo {
+        background: url('/public/balanceo.jpg') no-repeat center center / cover;
+    }
+
+    #alineacion {
+        background: url('/public/alineacion.jpg') no-repeat center center / cover;
+    }
+
+    #aceites {
+        background: url('/public/aceites.jpg') no-repeat center center / cover;
+    }
+
+    #llantas {
+        background: url('/public/llantas.jpg') no-repeat center center / cover;
+    }
+</style>
+
+</html>

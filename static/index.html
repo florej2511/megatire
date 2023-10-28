@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Megatire - El lugar de tu vehículo</title>
+    <link href="/public/output.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="icon" type="image/png" sizes="57x57" href="/public/icon.png">
+</head>
+
+<body class=" bg-primary">
+    <header
+        class="select-none bg-white fixed top-0 left-0 w-screen z-20 flex items-center justify-between py-4 px-5 h-20">
+        <img class="w-40 h-auto cursor-pointer" src="/public/logo.png" alt="Logo">
+        <div class="laptop:hidden phone:flex cursor-pointer duration-200 p-2 rounded-full bg-black bg-opacity-0 hover:bg-opacity-20"
+            id="button-open-navbar">
+            <span class="material-symbols-outlined">
+                menu
+            </span>
+        </div>
+        <nav class="phone:hidden laptop:flex px-3 flex text-xl items-center h-full">
+            <a class="cursor-pointer hover:text-primary hover:font-bold duration-200 px-2 text-center" href="/">
+                Inicio
+            </a>
+            <a class="cursor-pointer hover:text-primary hover:font-bold duration-200 px-2 text-center" href="/sedes">
+                Sedes
+            </a>
+            <a class="cursor-pointer hover:text-primary hover:font-bold duration-200 px-2 text-center" href="/contacto">
+                Contacto
+            </a>
+            <a class="cursor-pointer hover:text-primary hover:font-bold duration-200 px-2 text-center"
+                href="/servicios">
+                Servicios
+            </a>
+        </nav>
+    </header>
+    <nav class="select-none translate-x-full fixed flex-col justify-center top-0 left-0 bg-third px-3 z-30 flex text-xl items-center h-screen w-screen transition-transform duration-500 ease-in-out"
+        id="mobile-navbar">
+        <a class="text-white cursor-pointer hover:font-bold duration-200 py-5 text-center" href="/">
+            Inicio
+        </a>
+        <a class="text-white cursor-pointer hover:font-bold duration-200 py-5 text-center" href="/sedes">
+            Sedes
+        </a>
+        <a class="text-white cursor-pointer hover:font-bold duration-200 py-5 text-center" href="/servicios">
+            Servicios
+        </a>
+        <a class="text-white cursor-pointer hover:font-bold duration-200 py-5 text-center" href="/contacto">
+            Contacto
+        </a>
+        <div class="fixed text-white top-5 right-3 cursor-pointer p-1 flex items-center justify-center rounded-full border border-white hover:bg-white hover:text-third duration-200"
+            id="button-close-navbar">
+            <span class="material-symbols-outlined">
+                close
+            </span>
+        </div>
+    </nav>
+    <div class="h-20"></div>
+
+    <section class="select-none relative w-full min-h-[360px] phone:h-screen tablet:h-auto">
+        <video class="phone:hidden tablet:flex" autoplay loop muted preload="auto">
+            <source src="/public/taller.mp4" type="video/mp4">
+        </video>
+        <div id="screening" class="absolute w-full h-full tablet:hidden"></div>
+
+        <div class="absolute z-10 px-6 top-0 left-0 w-full h-full bg-black bg-opacity-60 flex flex-col justify-center hover:bg-opacity-0 duration-500"
+            id="overlay-video">
+            <span
+                class="text-white duration-500 font-bold px-2 py-1 w-fit tablet:text-8xl phone:text-4xl">MEGATIRE</span>
+            <span class="text-white duration-500 px-2 py-1 w-fit text-sm italic">El lugar de tu vehículo</span>
+        </div>
+    </section>
+
+    <section class="w-full min-h-screen bg-white flex justify-center items-center" id="about_us">
+        <div
+            class="tablet:w-[80vw] phone:w-full tablet:px-14 phone:px-5 py-5 h-auto min-h-[200px] bg-white flex flex-wrap">
+            <div class="phone:w-full tablet:w-1/2 laptop:w-1/3 flex justify-center items-center">
+                <img src="/public/img-otros.png" class="w-60 h-60" alt="">
+            </div>
+            <div class="phone:w-full tablet:w-1/2 laptop:w-2/3 flex items-center laptop:pl-5">
+                <div class="flex flex-col">
+                    <span class="text-primary text-3xl font-bold py-3">
+                        Un poco de nosotros...
+                    </span>
+                    <span class="text-justify">
+                        Con muchos años dentro del mercado en Megatire nos esforzamos por entregar los mejores servicios
+                        a los mejores precios y con la mejor calidad del mercado. Siéntete seguro de dejar tu auto con
+                        nuestro personal calificado para cada una de las tareas que realizamos.
+                    </span>
+                    <span class="py-1 font-bold">
+                        Megatire, el lugar de tu vehículo
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="w-full min-h-screen relative overflow-x-hidden flex items-center justify-center">
+        <div
+            class="select-none flex phone:w-full justify-center laptop:px-14 phone:px-5 duration-200 py-5 h-auto min-h-[200px] flex-wrap">
+            <div class="w-full flex flex-col justify-center items-center">
+                <span class="text-white text-3xl font-bold pt-3">
+                    Sobre nuestros servicios
+                </span>
+                <span class="text-white text-base pb-5">
+                    Te damos lo mejor en el cuidado de tu vehiculo
+                </span>
+            </div>
+            <div class="laptop:w-1/3 tablet:w-1/2 phone:w-full py-2 px-2">
+                <a href="/servicios">
+                    <div class="w-full px-1 h-96 relative cursor-pointer">
+                        <div
+                            class="absolute top-0 left-0 w-full h-full bg-black border-white border flex flex-col rounded-xl justify-evenly items-center py-5 duration-500 hover:scale-105">
+                            <span class="text-white text-3xl font-bold">
+                                Otros servicios
+                            </span>
+                            <span class="text-white text-center px-3">
+                                Ofrecemos una variedad de productos y servicios para el cuidado de tu vehículo. Contamos
+                                con
+                                lubricantes de alta calidad, accesorios y una amplia selección de llantas. Nuestra meta
+                                es
+                                brindarte soluciones completas para mantener tu vehículo en óptimas condiciones. <br>
+                                <strong>¡Ver la lista!</strong>
+                            </span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="laptop:w-1/3 tablet:w-1/2 phone:w-full py-2 px-2">
+                <a href="/servicios">
+                    <div class="w-full px-1 h-96 relative cursor-pointer">
+                        <div
+                            class="absolute top-0 left-0 w-full h-full bg-black border-white border flex flex-col rounded-xl justify-evenly items-center py-5 duration-500 hover:scale-105">
+                            <span class="text-white text-3xl font-bold">
+                                Alineación
+                            </span>
+                            <span class="text-white text-center px-3">
+                                La alineación de las llantas es un proceso de mantenimiento necesario para asegurar que
+                                las
+                                llantas estén rectas y paralelas entre sí y con el suelo. Esto es importante para evitar
+                                un
+                                desgaste desigual de los neumáticos y garantizar una conducción segura del vehículo.
+                            </span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="laptop:w-1/3 tablet:w-1/2 phone:w-full py-2 px-2">
+                <a href="/servicios">
+                    <div class="w-full px-1 h-96 relative cursor-pointer">
+                        <div
+                            class="absolute top-0 left-0 w-full h-full bg-black border-white border flex flex-col rounded-xl justify-evenly items-center py-5 duration-500 hover:scale-105">
+                            <span class="text-white text-3xl font-bold">
+                                Balanceo
+                            </span>
+                            <span class="text-white text-center px-3">
+                                El balanceo es el proceso de equilibrar el peso de las llantas y los rines. Aunque los
+                                neumáticos parecen iguales, pueden tener pequeñas diferencias de peso en cada lado. El
+                                balanceo se encarga de corregir estas imperfecciones mediante el uso de contrapesos
+                                colocados en el rin.
+                            </span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="select-none w-full h-screen bg-white flex justify-center items-center">
+        <div class="flex w-full h-full relative justify-center items-center bg-black bg-opacity-10">
+            <div class="text-center">
+                <h2 class="text-3xl font-bold">
+                    CONOCE TODAS NUESTRAS SEDES
+                </h2>
+            </div>
+            <div class="w-full h-full absolute slide slide-active duration-[1s] ease-in-out" id="la_aurora">
+                <div class="w-full h-full relative">
+                    <div
+                        class="absolute pt-20 top-0 left-0 w-full h-screen flex flex-col items-start justify-center bg-black bg-opacity-70 text-white px-14">
+                        <h2 class="text-4xl font-bold py-5">Sede Aurora</h2>
+                        <p class="tablet:w-1/2 phone:w-full text-justify py-2">En el corazón de la próspera comunidad de
+                            Aurora, se encuentra nuestra sede de Megatire, un oasis de innovación y servicio excepcional
+                            en la industria de neumáticos. Desde nuestra fundación, nos hemos dedicado a proporcionar
+                            productos y servicios de la más alta calidad a nuestros clientes, y nuestra sede en Aurora
+                            no es una excepción.
+                        </p>
+                        <a href="/sedes"
+                            class="px-3 py-2 border rounded-lg hover:bg-white hover:text-black duration-200 font-bold phone:w-full phone:text-center tablet:w-fit ">Ver
+                            las sedes</a>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full h-full absolute slide duration-[1s] ease-in-out" id="la_18">
+                <div class="w-full h-full relative">
+                    <div
+                        class="absolute pt-20 top-0 left-0 w-full h-screen flex flex-col items-start justify-center bg-black bg-opacity-70 text-white px-14">
+                        <h2 class="text-4xl font-bold py-5">Sede la 18</h2>
+                        <p class="tablet:w-1/2 phone:w-full text-justify py-2">Bienvenidos a la sede La 18 de Megatire,
+                            donde la excelencia en servicios de neumáticos y un compromiso inquebrantable con la
+                            satisfacción del cliente se encuentran en el corazón de nuestra misión. Ubicados
+                            estratégicamente en la carrera 18 #46-123, somos tu elección número uno para todas tus
+                            necesidades relacionadas con neumáticos.
+                        </p>
+                        <a href="/sedes"
+                            class="px-3 py-2 border rounded-lg hover:bg-white hover:text-black duration-200 font-bold phone:w-full phone:text-center tablet:w-fit ">Ver
+                            las sedes</a>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full h-full absolute slide duration-[1s] ease-in-out" id="barranca">
+                <div class="w-full h-full relative">
+                    <div
+                        class="absolute pt-20 top-0 left-0 w-full h-screen flex flex-col items-start justify-center bg-black bg-opacity-70 text-white px-14">
+                        <h2 class="text-4xl font-bold py-5">Sede Barranca</h2>
+                        <p class="tablet:w-1/2 phone:w-full text-justify py-2">En la ciudad de Barrancabermeja, te
+                            extendemos una cálida bienvenida a la sede de Megatire, donde la excelencia en servicios de
+                            neumáticos y la satisfacción del cliente son los pilares de nuestra misión. Nos
+                            enorgullecemos de ser tu elección número uno para todas tus necesidades relacionadas con
+                            neumáticos.
+                        </p>
+                        <a href="/sedes"
+                            class="px-3 py-2 border rounded-lg hover:bg-white hover:text-black duration-200 font-bold phone:w-full phone:text-center tablet:w-fit ">Ver
+                            las sedes</a>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full h-full absolute slide duration-[1s] ease-in-out" id="chimita">
+                <div class="w-full h-full relative">
+                    <div
+                        class="absolute pt-20 top-0 left-0 w-full h-screen flex flex-col items-start justify-center bg-black bg-opacity-70 text-white px-14">
+                        <h2 class="text-4xl font-bold py-5">Sede Chimitá</h2>
+                        <p class="tablet:w-1/2 phone:w-full text-justify py-2">En la encantadora localidad de Chimitá,
+                            te damos la bienvenida a la sede de Megatire, donde la excelencia en servicios de neumáticos
+                            y la satisfacción del cliente son la base de nuestra misión. Estratégicamente ubicados,
+                            somos la elección número uno para todas tus necesidades relacionadas con neumáticos.
+                        </p>
+                        <a href="/sedes"
+                            class="px-3 py-2 border rounded-lg hover:bg-white hover:text-black duration-200 font-bold phone:w-full phone:text-center tablet:w-fit ">Ver
+                            las sedes</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="w-full min-h-[70vh] bg-white flex justify-center items-center">
+        <div
+            class="select-none flex phone:w-full justify-center laptop:px-14 phone:px-5 duration-200 py-5 h-auto min-h-[200px] flex-wrap">
+            <div class="w-full flex flex-col justify-center items-center pb-5">
+                <span class="text-3xl font-bold pt-3 phone:text-left tablet:text-center">
+                    Lo que dicen nuestros clientes
+                </span>
+                <span class="text-base pb-5 tablet:text-center phone:text-justify">
+                    En Megatire, nos enfocamos en brindar una experiencia excepcional a nuestros valiosos clientes.
+                    Disfruta de un servicio de atención de primer nivel y sumérgete en una experiencia única mientras
+                    esperas el mantenimiento de tu vehículo. Tu satisfacción es nuestra prioridad absoluta.
+                </span>
+            </div>
+            <div class="w-full flex flex-wrap">
+                <div class="tablet:w-1/3 phone:w-full phone:pb-5 tablet:pb-0 flex flex-col max-h-96 overflow-y-auto">
+                    <div class="w-full target min-h-20 py-3 px-2 flex flex-col border rounded-t-lg border-opacity-10 border-primary cursor-pointer hover:bg-opacity-5 bg-black bg-opacity-0 duration-200"
+                        onclick="placeClient(this)" id="first_comment">
+                        <span class="text-center font-bold text-lg">
+                            Paola Cristancho
+                        </span>
+                        <span class="text-justify max-h-[40px] overflow-y-hidden truncate">
+                            Excelente servicio y atención, super recomendado, de los pocos sitios en Bucaramanga donde
+                            atienden con amabilidad
+                        </span>
+                    </div>
+                    <div class="w-full target min-h-20 py-3 px-2 flex flex-col border border-opacity-10 border-primary cursor-pointer hover:bg-opacity-5 bg-black bg-opacity-0 duration-200"
+                        onclick="placeClient(this)">
+                        <span class="text-center font-bold text-lg">
+                            William Suarez
+                        </span>
+                        <span class="text-justify max-h-[40px] overflow-y-hidden truncate">
+                            Donde se encuentra todo para su amigo inseparable tu carro con la mejor bateria del mercado
+                            BATERMAX
+                        </span>
+                    </div>
+                    <div class="w-full target min-h-20 py-3 px-2 flex flex-col border rounded-b-lg border-opacity-10 border-primary cursor-pointer hover:bg-opacity-5 bg-black bg-opacity-0 duration-200"
+                        onclick="placeClient(this)">
+                        <span class="text-center font-bold text-lg">
+                            Hugo Armando Serrano Osma
+                        </span>
+                        <span class="text-justify max-h-[40px] overflow-y-hidden truncate">
+                            Las llantas más económicas del mercado, súper recomendados
+                        </span>
+                    </div>
+                    <div class="w-full target min-h-20 py-3 px-2 flex flex-col border rounded-b-lg border-opacity-10 border-primary cursor-pointer hover:bg-opacity-5 bg-black bg-opacity-0 duration-200"
+                        onclick="placeClient(this)">
+                        <span class="text-center font-bold text-lg">
+                            Avelino Perucho Gomez
+                        </span>
+                        <span class="text-justify max-h-[40px] overflow-y-hidden truncate">
+                            Excelente atención buen servicio y precios accesibles
+                        </span>
+                    </div>
+                </div>
+                <div class="tablet:w-2/3 phone:w-full flex flex-col items-center justify-center px-10 overflow-hidden">
+                    <div class="border rounded-lg border-primary flex flex-col w-full items-start justify-center py-4 duration-200"
+                        id="client_said">
+                        <span class="font-bold text-2xl pb-3 px-5" id="client_name">
+                        </span>
+                        <span class="px-5 text-justify pb-2" id="client_description">
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section
+        class="w-full min-h-[45vh] bg-white flex justify-around items-center pt-10 pb-5 laptop:px-14 phone:px-5 text-white">
+        <div class="w-full rounded-lg border bg-third py-5 px-5 flex items-center justify-center flex-col">
+            <span class="text-2xl font-bold pb-2">
+                ¡Atención!
+            </span>
+            <h3 class="pb-2">
+                Si no recibiste tu revisión de 25 puntos en cualquiera de nuestras sedes no dudes en contactarnos
+            </h3>
+            <a href="/contacto?puntos"
+                class="p-2 border bg-white bg-opacity-0 hover:bg-opacity-100 hover:text-third duration-200 rounded-lg">
+                ¡Contáctanos!
+            </a>
+        </div>
+    </section>
+
+    <section
+        class="w-full min-h-[40vh] bg-primary flex justify-around items-center pt-10 pb-5 laptop:px-14 phone:px-5 text-white flex-col">
+        <div class="w-full flex flex-wrap justify-center items-start h-1/3 pb-5">
+            <div class="tablet:w-1/3 phone:text-center phone:w-full text-left h-full flex flex-col px-2">
+                <span class="font-bold text-3xl pb-3">
+                    Servicios:
+                </span>
+                <a href="/servicios#alineacion" class="hover:font-bold duration-200">
+                    Alineación
+                </a>
+                <a href="/servicios#balanceo" class="hover:font-bold duration-200">
+                    Balanceo
+                </a>
+                <a href="/servicios#aceite" class="hover:font-bold duration-200">
+                    Aceite
+                </a>
+                <a href="/servicios#llantas" class="hover:font-bold duration-200">
+                    Llantas
+                </a>
+                <a href="/servicios#accesorios" class="hover:font-bold duration-200">
+                    Accesorios
+                </a>
+            </div>
+            <div class="tablet:w-1/3 phone:text-center phone:w-full h-full flex flex-col px-2 text-left">
+                <span class="font-bold text-3xl pb-3">
+                    Contacto:
+                </span>
+                <span class="">
+                    Barranca:
+                </span>
+                <a href="tel:3173666747" class="hover:font-bold duration-200">
+                    (+57) 317 366 6747 - Ivonne Galvis
+                </a>
+                <span class="">
+                    Carrera 18:
+                </span>
+                <a href="tel:3184278546" class="hover:font-bold duration-200">
+                    (+57) 318 427 8546 - Pedro Duarte
+                </a>
+                <span class="">
+                    La Aurora:
+                </span>
+                <a href="tel:3142068279" class="hover:font-bold duration-200">
+                    (+57) 314 206 8279 - Nicol Garcia
+                </a>
+                <span class="">
+                    Chimitá:
+                </span>
+                <a href="tel:3187353962" class="pb-2 hover:font-bold duration-200">
+                    (+57) 318 735 3962 - Jhonatan
+                </a>
+            </div>
+            <div class="tablet:w-1/3 phone:text-center phone:w-full text-left h-full flex flex-col px-2">
+                <span class="font-bold text-3xl pb-3">
+                    Sedes:
+                </span>
+                <a href="/sedes#la_18" class="hover:font-bold duration-200">
+                    Sede la 18
+                </a>
+                <a href="/sedes#aurora" class="hover:font-bold duration-200">
+                    Sede la Aurora
+                </a>
+                <a href="/sedes#barranca" class="hover:font-bold duration-200">
+                    Sede Barranca
+                </a>
+                <a href="/sedes#chimita" class="hover:font-bold duration-200">
+                    Sede Chimitá
+                </a>
+            </div>
+        </div>
+        <div class="border-t border-gray-300 w-full text-center border-opacity-40 pt-3 italic">
+            Megatire 2023
+        </div>
+    </section>
+
+    <script src="/public/main.js"></script>
+    <script src="/public/index.js"></script>
+</body>
+
+<style>
+    #screening {
+        background: url('/public/header1.jpg') no-repeat center center / cover;
+    }
+
+    #balanceo {
+        background: url('/public/balanceo.jpg') no-repeat center center / cover;
+    }
+
+    #alineacion {
+        background: url('/public/alineacion.jpg') no-repeat center center / cover;
+    }
+
+    #otros_servicios {
+        background: url('/public/aceite.jpg') no-repeat center center / cover;
+    }
+
+    #la_aurora {
+        background: url('/public/aurora.jpeg') no-repeat center center / cover;
+    }
+
+    #la_18 {
+        background: url('/public/crra18.jpeg') no-repeat center center / cover;
+    }
+
+    #chimita {
+        background: url('/public/chimita.jpeg') no-repeat center center / cover;
+    }
+
+    #barranca {
+        background: url('/public/barranca.jpeg') no-repeat center center / cover;
+    }
+</style>
+
+</html>
